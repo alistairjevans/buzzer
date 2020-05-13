@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-2">Player</div>
+        <div class="col-4"><input type="text" id="userInput" /></div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+    <div class="row py-2">
+        <div id="buzzer" class="select-button"></div>
+    </div>
+    <div class="row my-2">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div id="buzzes" class="w-100 px-3"></div>
+    </div>
+</div>
+
+<audio id="buzzAudio" style="visibility: hidden;" preload="auto" src="~/content/buzzer.mp3">
+</audio>
+<script src="~/lib/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/buzz.js"></script>
